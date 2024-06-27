@@ -1,0 +1,380 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('배경.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #f5f5dc;
+    /* 백업 색상 */
+}
+
+h1 {
+    margin-right: 500px;
+    color: rgb(228, 235, 34);
+    font-size: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(61, 38, 11, 0.5);
+}
+
+.logo-title {
+    display: flex;
+}
+
+header .logo {
+    width: 60px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+header h1 {
+    margin: 0;
+    margin-left: 5px;
+    font-size: 35px;
+    color: #fff700;
+    font-weight: bold;
+}
+
+header .title {
+    display: flex;
+    gap: 5px;
+    position: relative;
+    top: 11.9px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 15px;
+    flex: 1 0 auto;
+    max-width: 200px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #ececec00;
+}
+
+.search-bar ::placeholder {
+    color: #fff700;
+}
+
+.search-bar .bi {
+    width: 20px;
+    cursor: pointer;
+}
+
+#search-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #ececec00;
+    cursor: pointer;
+}
+
+i {
+    font-size: 24px;
+}
+
+.game-detailst {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.story-description {
+    text-align: left;
+    font-size: 1em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.category {
+    position: relative;
+}
+
+.game-info-table {
+    position: relative;
+    z-index: 1;
+}
+
+.details-content {
+    position: absolute;
+    top: 100%;
+    /* game-info-table의 아래로 이동 */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    /* 왼쪽 정렬 */
+    text-align: left;
+    font-weight: 550;
+    font-size: 15px;
+}
+
+table {
+    gap: 50px;
+}
+
+.game-info-table {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 20px 0;
+}
+
+.row.header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 200px;
+}
+
+.click-data1,
+.click-data2,
+.click-data3,
+.click-data4 {
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    color: rgb(86, 86, 86);
+    font-weight: 5000px;
+}
+
+.click-data1:hover,
+.click-data2:hover,
+.click-data3:hover,
+.click-data4:hover {
+    color: rgb(217, 217, 217);
+    -webkit-text-stroke: 1px rgb(86, 86, 86);
+    font-size: 22px;
+}
+
+.click-data1.active,
+.click-data2.active,
+.click-data3.active,
+.click-data4.active {
+    color: rgb(217, 217, 217);
+    -webkit-text-stroke: 1px rgb(86, 86, 86);
+    font-size: 22px;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    text-align: left;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0px;
+}
+
+.data1-content,
+.data2-content,
+.data3-content,
+.communication-content {
+    width: 200px;
+    text-align: left;
+}
+
+@media (max-width: 1270px) {
+
+    .game-info-table {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .row.header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .click-data1,
+    .click-data2,
+    .click-data3,
+    .click-data4 {
+        display: flex;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    header img.logo {
+        width: 50px;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .top-bar {
+        padding: 5px 0;
+        justify-content: center;
+    }
+
+    header img.logo {
+        width: 50px;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .search-bar {
+        justify-content: flex-end;
+    }
+
+    .search-bar input {
+        max-width: 150px;
+        max-height: 10px;
+    }
+
+    .search-bar ::placeholder {
+        font-size: 13px;
+    }
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    .game-info-table {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .click-data1,
+    .click-data2,
+    .click-data3,
+    .click-data4 {
+        cursor: pointer;
+        border-radius: 5px;
+        position: relative;
+        width: 200px;
+        display: flex;
+        gap: 50px;
+    }
+
+    .content {
+        display: none;
+        position: relative;
+        border-radius: 5px;
+        z-index: 10;
+        width: 100%;
+        /* 부모 요소의 너비에 맞추기 */
+    }
+
+    .data1-content,
+    .data2-content,
+    .data3-content,
+    .communication-content {
+        width: 200px;
+    }
+}
+
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 19px;
+    }
+
+    header img.logo {
+        width: 45px;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 850px) {
+    header h1 {
+        font-size: 17px;
+    }
+
+    header img.logo {
+        width: 40px;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .top-bar {
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    header {
+        height: 83px;
+    }
+
+    header img.logo {
+        width: 40px;
+        margin: 0px;
+        margin-right: 5.5px;
+        position: relative;
+        top: 6.5px;
+    }
+
+    header .title {
+        font-size: 18px;
+        margin: 0px;
+        position: relative;
+        top: 18px;
+    }
+
+    .search-bar {
+        display: block;
+        margin-left: 5px;
+    }
+
+    .search-bar input {
+        height: 2.5px;
+        width: 150px;
+        position: relative;
+        bottom: -4px;
+    }
+
+    .bi {
+        font-size: 20px;
+        position: relative;
+        bottom: -6.5px;
+    }
+
+    #search-button {
+        padding-left: 5px;
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>철권</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="main-2.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="top-bar">
+            <div class="logo-title">
+                <div onclick="navigateToGame('/RetroArcade-1/main1/main.html')">
+                    <img src="logo.png" alt="Logo" class="logo" />
+                </div>
+                <h1 class="title">철권</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search..." />
+                <button id="search-button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="game-container">
+            <div class="game-info">
+                <!-- <div class="game-center"> -->
+                <div class="game-header">
+                    <img src="small-tekken.avif" alt="" class="small-tekken">
+                    <div class="game-details">
+                        <div>
+                            <img src="tekken-logo (2).png" alt="Tekken Logo" class="game-logo">
+                            <p class="font">1994.12.09 출시 | 시즌 8개</p>
+                        </div>
+                        <div class="play-now">
+                            <div onclick="navigateToGame('poki.com/kr/레트로')" class="play-content">Play Now</div>
+                            <i class="bi bi-caret-right-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+
+                <div class="story1">기본 캐릭터 32명의 If 또는 사이드 스토리를 진행하는 모드.<br>
+                    기존 철권 시리즈의 캐릭터별 스토리 배틀과 같은 진행방식이며 총 5회전으로 구성되어있다.<br>
+                    카자와 준과 레이나의 에피소드는 메인 스토리 The Dark Awakens를 클리어해야 해금된다.
+                </div>
+                <a href="/RetroArcade-3/main1/main3-1.html" class="details-link">상세정보 보러가기</a>
+            </div>
+            <img src="tekken-image.jpg" alt="Tekken Image" class="tekken-image">
+        </div>
+
+        <div class="story2">기본 캐릭터 32명의 If 또는 사이드 스토리를 진행하는 모드.<br>
+            기존 철권 시리즈의 캐릭터별 스토리 배틀과 같은 진행방식이며 총 5회전으로 구성되어있다.<br>
+            카자와 준과 레이나의 에피소드는 메인 스토리 The Dark Awakens를 클리어해야 해금된다.
+        </div>
+        <a href="/RetroArcade-3/main1/main3-1.html" class="details-link2">상세정보 보러가기</a>
+
+        <div class="reviews">
+            <h2>Review</h2>
+            <div class="review">
+                <span class="reviewer">봉이기억력</span>
+                <span class="stars">★★★★★</span>
+                <p>재밌네요. 추천합니다.</p>
+            </div>
+            <div class="review">
+                <span class="reviewer">SVT S2</span>
+                <span class="stars">★★★★☆</span>
+                <p>오락실 온거같고 좋네요 ㅎㅎ</p>
+            </div>
+            <div class="review">
+                <span class="reviewer">I Love Korea</span>
+                <span class="stars">★★★★★</span>
+                <p>Very Good!!!!!!</p>
+            </div>
+            <div class="review">
+                <span class="reviewer">마라탕</span>
+                <span class="stars">★★☆☆☆</span>
+                <p>으 개별로;; 이거 왜함</p>
+            </div>
+        </div>
+
+        <div class="related-games">
+            <h2>related game</h2>
+            <div class="related-game">
+                <img src="related1.png" alt="Related Game 1">
+            </div>
+            <div class="related-game">
+                <img src="related2.png" alt="Related Game 2">
+            </div>
+        </div>
+    </div>
+    <script>
+        function navigateToGame(gameName) {
+            window.location.href = '/RetroArcade-1/main1/main.html';
+        }
+    </script>
+</body>
+
+</html>

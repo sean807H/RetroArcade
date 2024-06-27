@@ -1,0 +1,442 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("배경.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #f5f5dc;
+}
+
+h1 {
+  margin-right: 500px;
+  color: rgb(228, 235, 34);
+  font-size: 45px;
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgba(61, 38, 11, 0.5);
+}
+
+header .logo {
+  width: 60px;
+}
+
+header h1 {
+  margin: 0;
+  margin-left: 5px;
+  font-size: 35px;
+  color: #fff700;
+}
+
+header .title {
+  display: flex;
+  gap: 5px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.search-bar input {
+  padding: 8px;
+  font-size: 15px;
+  flex: 1 0 auto;
+  max-width: 200px;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: #ececec00;
+}
+
+.search-bar ::placeholder {
+  color: #fff700;
+}
+
+.search-bar .bi {
+  width: 20px;
+  cursor: pointer;
+}
+
+#search-button {
+  padding: 5px 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #ececec00;
+  cursor: pointer;
+}
+
+i {
+  font-size: 24px;
+}
+
+.ranked-wrapper {
+  position: relative;
+}
+
+.featured {
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+  /* 수평 스크롤 설정 */
+  position: relative;
+  margin-top: 25px;
+  margin-left: 29px;
+}
+
+/* 스크롤바의 색상 및 너비 설정 */
+.featured::-webkit-scrollbar {
+  width: 5px;
+  /* 스크롤바 너비 */
+  height: 2px;
+}
+
+.featured::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
+  /* 스크롤바 트랙 배경색 */
+}
+
+.featured::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0);
+  /* 스크롤바 색상 */
+  border-radius: 6px;
+  /* 스크롤바 모서리 둥글기 */
+}
+
+.featured-game {
+  display: inline-block;
+  margin: 35px 45px;
+  cursor: pointer;
+}
+
+.featured-game img {
+  width: 300px;
+  height: 200px;
+  border-radius: 42px;
+  position: relative;
+  z-index: 2;
+}
+
+.rank-number {
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #909090;
+  font-size: 150px;
+  position: absolute;
+  top: 50px;
+  transform: translateY(-50%);
+  z-index: 1;
+  left: -55px;
+}
+
+.game img {
+  width: 150px;
+  height: 110px;
+  margin: 5px;
+}
+
+h2 {
+  font-weight: 1000;
+  color: rgb(217, 217, 217);
+  -webkit-text-stroke: 1.8px rgb(86, 86, 86);
+  font-size: 35px;
+  margin-top: 0px;
+}
+
+.new {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.scroll-content {
+  overflow-x: auto;
+  display: flex;
+}
+
+/* 스크롤바의 색상 및 너비 설정 */
+.scroll-content::-webkit-scrollbar {
+  width: 5px;
+  /* 스크롤바 너비 */
+  height: 2px;
+}
+
+.scroll-content::-webkit-scrollbar-track {
+  background-color: rgb(255, 255, 255, 0);
+  /* 스크롤바 트랙 배경색 */
+}
+
+.scroll-content::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0, 0);
+  /* 스크롤바 색상 */
+  border-radius: 6px;
+  /* 스크롤바 모서리 둥글기 */
+}
+
+.game {
+  display: inline-block;
+  margin: 0px;
+}
+
+.game img {
+  width: auto;
+}
+
+.game-wrap {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+
+  header .logo {
+    margin-left: 10px;
+    width: 60px;
+  }
+
+  .search-bar {
+    margin-right: 5px;
+  }
+
+  .featured {
+    display: none;
+  }
+
+  .game-wrap {
+    display: block;
+  }
+
+  .featured-game.active {
+    display: inline-block;
+  }
+
+  .featured-game img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 1000;
+    -webkit-text-stroke: 1.5px rgb(86, 86, 86);
+    margin-top: 0px;
+  }
+
+  .scroll-content {
+    overflow-x: hidden;
+    white-space: normal;
+    display: block;
+  }
+
+  .game img {
+    width: 140px;
+    height: 100px;
+    margin: 5px;
+  }
+
+  .top-bar {
+    padding: 5px 0;
+    justify-content: center;
+  }
+
+  header img.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .search-bar {
+    justify-content: flex-end;
+  }
+
+  .search-bar input {
+    max-width: 150px;
+    max-height: 10px;
+  }
+
+  .search-bar ::placeholder {
+    font-size: 13px;
+  }
+
+  header h1 {
+    font-size: 23px;
+  }
+
+  header .title {
+    display: flex;
+    gap: 4px;
+  }
+}
+
+.slideshow-container {
+  max-height: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.mySlides img {
+  height: 350px;
+
+}
+
+.dot {
+  height: 9px;
+  width: 9px;
+  margin: 0 5px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  bottom: 50px;
+  z-index: 3;
+}
+
+.active {
+  background-color: #000000;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 950px) {
+  .mySlides img {
+    height: 330px;
+  }
+
+  .game img {
+    width: 130px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 900px) {
+  .mySlides img {
+    height: 310px;
+  }
+}
+
+@media (max-width: 850px) {
+  .mySlides img {
+    height: 290px;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .mySlides img {
+    height: 270px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .mySlides img {
+    height: 250px;
+  }
+
+  .dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 3px;
+  }
+}
+
+@media (max-width: 650px) {
+  .top-bar {
+    flex-direction: column;
+    padding-top: 0px;
+    /* 여백 줄이기 */
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    height: 83px;
+  }
+
+  header img.logo {
+    margin: 0px;
+    width: 40px;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 18px;
+    right: 4.5px;
+  }
+
+  header h1 {
+    font-size: 20px;
+    /* padding: 5px 0; */
+  }
+
+  header .title {
+    display: flex;
+    gap: 60px;
+    position: relative;
+    bottom: 16.5px;
+  }
+
+  .search-bar input {
+    height: 3px;
+    width: 150px;
+    position: relative;
+    bottom: 7px;
+  }
+
+  .search-bar {
+    margin-left: 5px;
+  }
+
+  .dot {
+    height: 6px;
+    width: 6px;
+    margin: 0 2px;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: 1000;
+    -webkit-text-stroke: 1.2px rgb(86, 86, 86);
+    margin-top: 0px;
+  }
+}
