@@ -30,8 +30,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgba(61, 38, 11, 0.5); 
-    height: 80px;
+    background-color: rgba(61, 38, 11, 0.5);
+    height: 70px;
 }
 
 .logo-title {
@@ -43,6 +43,8 @@ header .logo {
     margin-right: 10px;
     margin-left: 10px;
     cursor: pointer;
+    position: relative;
+    top: 2px;
 }
 
 header h1 {
@@ -50,13 +52,14 @@ header h1 {
     font-size: 35px;
     color: #fff700;
     font-weight: bold;
+    font-style: normal;
 }
 
 header .title {
     display: flex;
     gap: 5px;
     position: relative;
-    top: 15px;
+    top: 12px;
 }
 
 .search-bar {
@@ -276,7 +279,9 @@ div .story2 {
     }
 
     header .title {
-        padding-left: 5px;
+        padding-left: 6px;
+        position: relative;
+        top: 15px;
     }
 
     .search-bar {
@@ -456,7 +461,8 @@ div .story2 {
         font-size: 18px;
         margin: 0px;
         position: relative;
-        top: 18px;
+        top: 20px;
+        padding-left: 0px;
     }
 
     .search-bar {
@@ -464,7 +470,7 @@ div .story2 {
         display: block;
         margin-left: 5px;
         position: relative;
-        bottom: -9px;
+        bottom: -4.5px;
     }
 
     .search-bar input {

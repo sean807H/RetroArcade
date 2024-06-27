@@ -30,7 +30,7 @@ header {
     justify-content: space-between;
     padding: 10px;
     background-color: rgba(61, 38, 11, 0.5);
-    height: 80px;
+    height: 70px;
 }
 
 .logo-title {
@@ -42,6 +42,8 @@ header .logo {
     margin-right: 10px;
     margin-left: 10px;
     cursor: pointer;
+    position: relative;
+    top: 2px;
 }
 
 header h1 {
@@ -241,7 +243,9 @@ h2 {
     }
 
     header .title {
-        padding-left: 5px;
+        padding-left: 6px;
+        position: relative;
+        top: 15px;
     }
 
     .search-bar {
@@ -324,6 +328,7 @@ h2 {
     header .title {
         font-size: 18px;
         margin: 0px;
+        padding: 0px;
         position: relative;
         top: 18px;
     }
@@ -333,7 +338,7 @@ h2 {
         display: block;
         margin-left: 5px;
         position: relative;
-        bottom: -9px;
+        bottom: -4.5px;
     }
 
     .search-bar input {

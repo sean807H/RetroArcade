@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     padding: 10px;
     background-color: rgba(61, 38, 11, 0.5);
-    height: 80px;
+    height: 70px;
 }
 
 .logo-title {
@@ -43,6 +43,8 @@ header .logo {
     margin-right: 10px;
     margin-left: 10px;
     cursor: pointer;
+    position: relative;
+    top: 2px;
 }
 
 header h1 {
@@ -257,6 +259,12 @@ table {
         margin-right: 0;
     }
 
+    header .title {
+        padding-left: 6px;
+        position: relative;
+        top: 14px;
+    }
+
     .search-bar {
         justify-content: flex-end;
     }
@@ -322,8 +330,9 @@ table {
 }
 
 @media (max-width: 850px) {
-    header h1 {
+    header .title {
         font-size: 17px;
+        margin: 0px;
     }
 
     header img.logo {
@@ -354,26 +363,32 @@ table {
     header .title {
         font-size: 18px;
         margin: 0px;
+        padding: 0px;
         position: relative;
         top: 18px;
     }
 
     .search-bar {
+        margin: 0px 5px;
         display: block;
         margin-left: 5px;
+        position: relative;
+        bottom: -1px;
     }
 
     .search-bar input {
         height: 2.5px;
         width: 150px;
-        position: relative;
-        bottom: -4px;
+    }
+
+    .search-bar .bi {
+        margin-left: 0px;
     }
 
     .bi {
         font-size: 20px;
         position: relative;
-        bottom: -6.5px;
+        bottom: -2px;
     }
 
     #search-button {
