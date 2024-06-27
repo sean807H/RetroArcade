@@ -31,6 +31,7 @@ header {
     justify-content: space-between;
     padding: 10px;
     background-color: rgba(61, 38, 11, 0.5);
+    height: 80px;
 }
 
 .logo-title {
@@ -41,6 +42,7 @@ header .logo {
     width: 60px;
     margin-right: 10px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 header h1 {

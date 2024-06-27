@@ -13,6 +13,7 @@ h1 {
     margin-right: 500px;
     color: rgb(228, 235, 34);
     font-size: 45px;
+    font-style: italic;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -30,6 +31,7 @@ header {
     justify-content: space-between;
     padding: 10px;
     background-color: rgba(61, 38, 11, 0.5);
+    height: 80px;
 }
 
 .logo-title {
@@ -39,6 +41,8 @@ header {
 header .logo {
     width: 60px;
     margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 header h1 {
@@ -52,7 +56,7 @@ header .title {
     display: flex;
     gap: 5px;
     position: relative;
-    top: 11.9px;
+    top: 15px;
 }
 
 .search-bar {
@@ -162,6 +166,7 @@ i {
     border-radius: 5px;
     margin-top: 10px;
     font-size: 17.5px;
+    cursor: pointer;
 }
 
 .play-content {

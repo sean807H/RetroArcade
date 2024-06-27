@@ -13,7 +13,9 @@
     <div class="container">
         <header class="top-bar">
             <div class="logo-title">
-                <img src="logo.png" alt="Logo" class="logo" />
+                <div onclick="navigateToGame('/RetroArcade-1/main1/main.html')">
+                    <img src="logo.png" alt="Logo" class="logo" />
+                </div>
                 <h1 class="title">Subway Surfers</h1>
             </div>
             <div class="search-bar">
@@ -35,7 +37,7 @@
                             <p class="font">2012.06 출시 | 시즌 1개</p>
                         </div>
                         <div class="play-now">
-                            <div class="play-content">Play Now</div>
+                            <div onclick="navigateToGame('https://www.youtube.com')" class="play-content">Play Now</div>
                             <i class="bi bi-caret-right-fill"></i>
                         </div>
                     </div>
@@ -89,7 +91,14 @@
             </div>
         </div>
     </div>
-    <script src="main-2.js"></script>
+    <script>
+        function navigateToGame(gameName) {
+            window.location.href = '/RetroArcade-1/main1/main.html';
+        }
+        function navigateToGame(url) {
+            window.open(url, 'https://www.youtube.com');
+        }
+    </script>
 </body>
 
 </html>

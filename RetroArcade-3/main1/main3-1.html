@@ -13,7 +13,9 @@
     <div class="container">
         <header class="top-bar">
             <div class="logo-title">
-                <img src="logo.png" alt="Logo" class="logo" />
+                <div onclick="navigateToGame('/RetroArcade-1/main1/main.html')">
+                    <img src="logo.png" alt="Logo" class="logo" />
+                </div>
                 <h1 class="title">철권 - 상세정보</h1>
             </div>
             <div class="search-bar">
@@ -254,6 +256,11 @@
         </div>
     </div>
     <script src="main3-1.js"></script>
+    <script>
+        function navigateToGame(gameName) {
+            window.location.href = '/RetroArcade-1/main1/main.html';
+        }
+    </script>
 </body>
 
 </html>

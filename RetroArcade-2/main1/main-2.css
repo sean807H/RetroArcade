@@ -13,6 +13,7 @@ h1 {
     margin-right: 500px;
     color: rgb(228, 235, 34);
     font-size: 45px;
+    font-style: italic;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -29,7 +30,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgba(61, 38, 11, 0.5);
+    background-color: rgba(61, 38, 11, 0.5); 
+    height: 80px;
 }
 
 .logo-title {
@@ -39,6 +41,8 @@ header {
 header .logo {
     width: 60px;
     margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 header h1 {
@@ -52,7 +56,7 @@ header .title {
     display: flex;
     gap: 5px;
     position: relative;
-    top: 11.9px;
+    top: 15px;
 }
 
 .search-bar {
@@ -163,6 +167,7 @@ i {
     border-radius: 5px;
     margin-top: 10px;
     font-size: 17.5px;
+    cursor: pointer;
 }
 
 .play-content {
@@ -349,7 +354,8 @@ div .story2 {
         width: 165px;
         /* margin-right: 100px; */
     }
-    .game-logo{
+
+    .game-logo {
         border-bottom: 1px solid rgb(120, 120, 120);
         padding-bottom: 15px;
     }
@@ -383,12 +389,12 @@ div .story2 {
         margin-top: 10px;
         font-size: 17.5px;
     }
-    
+
     .play-content {
         position: relative;
         top: 3.7px;
     }
-    
+
     .play-now i {
         font-size: 23px;
         position: relative;
@@ -428,6 +434,7 @@ div .story2 {
         flex-direction: column;
         padding-top: 0px;
     }
+
     .game-logo {
         border-bottom: none;
     }
@@ -515,12 +522,12 @@ div .story2 {
         margin-top: 10px;
         font-size: 17.5px;
     }
-    
+
     .play-content {
         position: relative;
         top: 1px;
     }
-    
+
     .play-now i {
         position: relative;
         top: 7px;

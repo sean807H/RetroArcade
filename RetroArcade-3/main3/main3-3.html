@@ -13,8 +13,10 @@
     <div class="container">
         <header class="top-bar">
             <div class="logo-title">
-                <img src="logo.png" alt="Logo" class="logo" />
-                <h1 class="title">파이어보이앤워터걸 - 상세정보</h1>
+                <div onclick="navigateToGame('/RetroArcade-1/main1/main.html')">
+                    <img src="logo.png" alt="Logo" class="logo" />
+                </div>
+                <h1 class="title">Fireboy & Watergirl - 상세정보</h1>
             </div>
             <div class="search-bar">
                 <input type="text" id="search-input" placeholder="Search..." />
@@ -81,6 +83,11 @@
         </div>
     </div>
     <script src="main3-3.js"></script>
+    <script>
+        function navigateToGame(gameName) {
+            window.location.href = '/RetroArcade-1/main1/main.html';
+        }
+    </script>
 </body>
 
 </html>
