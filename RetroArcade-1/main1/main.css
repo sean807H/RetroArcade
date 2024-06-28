@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #f5f5dc;
+  width: max;
 }
 
 h1 {
@@ -228,6 +229,10 @@ h2 {
 
   .game-wrap {
     display: block;
+  }
+
+  .slideshow-container {
+    cursor: pointer;
   }
 
   .featured-game.active {
@@ -462,5 +467,11 @@ h2 {
     font-weight: 1000;
     -webkit-text-stroke: 1.2px rgb(86, 86, 86);
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mySlides img {
+    height: 180px;
   }
 }

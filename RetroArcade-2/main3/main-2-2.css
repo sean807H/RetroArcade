@@ -519,7 +519,7 @@ h2 {
     }
 
     .game-info .game-header .game-logo {
-        width: 150px;
+        width: 100px;
         margin-right: 20px;
     }
 
@@ -585,8 +585,8 @@ h2 {
 
     .small-FireWater {
         display: flex;
-        width: 50px;
-        height: 49px;
+        width: 45px;
+        height: 44px;
         margin-left: 20px;
         border-radius: 10px;
     }
@@ -601,7 +601,7 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 90px;
+        width: 70px;
         height: 37px;
         margin: 0;
         padding: 0;
@@ -615,6 +615,6 @@ h2 {
 
     .font {
         -webkit-text-stroke: 0.7px rgb(86, 86, 86);
-        font-size: 14px;
+        font-size: 11px;
     }
 }
