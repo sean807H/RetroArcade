@@ -248,6 +248,7 @@ h2 {
 
 
 .related-games {
+    cursor: pointer;
     margin-top: 20px;
 }
 

@@ -151,6 +151,10 @@ i {
   left: -55px;
 }
 
+.scroll-container {
+  cursor: pointer;
+}
+
 .game img {
   width: 150px;
   height: 110px;
