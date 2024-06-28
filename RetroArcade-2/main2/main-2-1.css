@@ -214,9 +214,15 @@ div .story2 {
 
 .reviews h2 {
     margin: 0;
-    font-size: 20px;
+    /* font-size: 20px; */
     width: 100%;
     /* 제목이 전체 가로폭을 차지하도록 설정 */
+}
+
+h2 {
+    font-size: 27px;
+    color: rgb(217, 217, 217);
+    -webkit-text-stroke: 1.3px rgb(86, 86, 86);
 }
 
 .review {
@@ -238,19 +244,21 @@ div .story2 {
     font-weight: bold;
 }
 
-
 .related-games {
     margin-top: 20px;
 }
 
 .related-games h2 {
     margin: 0;
-    font-size: 20px;
+    font-size: 27px;
+    color: rgb(217, 217, 217);
+    -webkit-text-stroke: 1.3px rgb(86, 86, 86);
 }
 
 .related-game {
     display: inline-block;
-    margin: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .related-game img {
