@@ -7,13 +7,14 @@
     <title>Fireboy & Watergirl</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="main-2-2.css">
+    <link rel="shortcut icon" href="mainlogo.png">
 </head>
 
 <body>
     <div class="container">
         <header class="top-bar">
             <div class="logo-title">
-                <div onclick="navigateToGame('/RetroArcade-1/main1/main.html')">
+                <div onclick="navigateToGame('../../index')">
                     <img src="logo.png" alt="Logo" class="logo" />
                 </div>
                 <h1 class="title">Fireboy & Watergirl</h1>
@@ -37,7 +38,8 @@
                             <p class="font">2018.05 출시 | 시즌 6개</p>
                         </div>
                         <div class="play-now">
-                            <div onclick="navigateToGameLink('https://fireboyandwatergirl.site/forest-temple')" class="play-content">Play Now</div>
+                            <div onclick="navigateToGameLink('https://fireboyandwatergirl.site/forest-temple')"
+                                class="play-content">Play Now</div>
                             <i class="bi bi-caret-right-fill"></i>
                         </div>
                     </div>
@@ -80,17 +82,19 @@
                 <p>이거하면서 추억여행했음</p>
             </div>
         </div>
+    </div>
 
-        <div class="related-games">
-            <h2>related game</h2>
-            <div class="related-game">
-                <img src="related3.jpg" alt="Related Game 1">
-            </div>
+    <div class="related-games">
+        <h2>related game</h2>
+        <div class="related-game">
+            <img src="related3.jpg" onclick="navigateToGameLink('https://flashgamemall.tistory.com/308')"
+                alt="Related Game 1">
         </div>
     </div>
+    </div>
     <script>
-        function navigateToGame(gameName) {
-            window.location.href = '/RetroArcade-1/main1/main.html';
+        function navigateToGame(gameId) {
+            window.location.href = gameId + '.html';
         }
         function navigateToGameLink(url) {
             window.open(url, 'https://fireboyandwatergirl.site/forest-temple');

@@ -20,8 +20,8 @@ h1 {
 }
 
 .container {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0;
   border-radius: 10px;
 }
 
@@ -69,6 +69,7 @@ header .title {
   border-radius: 20px;
   border: 2px solid rgb(0, 0, 0);
   background-color: #ececec00;
+  outline: none;
 }
 
 .search-bar ::placeholder {
@@ -98,42 +99,39 @@ i {
 
 .featured {
   display: flex;
-  gap: 0;
   overflow-x: auto;
-  /* 수평 스크롤 설정 */
   position: relative;
   margin-top: 25px;
-  margin-left: 29px;
+  margin-left: 85px;
+  margin-right: 75px;
+  padding-left: 10px;
+  justify-content: space-between;
 }
 
 /* 스크롤바의 색상 및 너비 설정 */
 .featured::-webkit-scrollbar {
   width: 5px;
-  /* 스크롤바 너비 */
-  height: 2px;
+  height: 2.5px;
 }
 
 .featured::-webkit-scrollbar-track {
-  background-color: rgba(255, 255, 255, 0);
-  /* 스크롤바 트랙 배경색 */
+  background-color: rgba(255, 255, 255, 0.641);
+  border-radius: 6px;
 }
 
 .featured::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0);
-  /* 스크롤바 색상 */
+  background-color: rgba(133, 80, 19, 0.678);
   border-radius: 6px;
-  /* 스크롤바 모서리 둥글기 */
 }
 
 .featured-game {
   display: inline-block;
   margin: 35px 45px;
-  cursor: pointer;
 }
 
 .featured-game img {
-  width: 300px;
-  height: 200px;
+  width: 330px;
+  height: 230px;
   border-radius: 42px;
   position: relative;
   z-index: 2;
@@ -143,12 +141,32 @@ i {
   font-weight: bold;
   color: transparent;
   -webkit-text-stroke: 2px #909090;
-  font-size: 150px;
+  font-size: 180px;
   position: absolute;
   top: 50px;
-  transform: translateY(-50%);
+  transform: translateY(-45%);
+  z-index: 1;
+  left: -70px;
+}
+
+.rank-number1 {
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px #909090;
+  font-size: 180px;
+  position: absolute;
+  top: 50px;
+  transform: translateY(-45%);
   z-index: 1;
   left: -55px;
+}
+
+.rank {
+  cursor: pointer;
+}
+
+.scroll-container {
+  cursor: pointer;
 }
 
 .game img {
@@ -165,33 +183,35 @@ h2 {
   margin-top: 0px;
 }
 
+.recommendation {
+  margin-left: 15px;
+}
+
 .new {
   margin-top: 10px;
   margin-bottom: 20px;
+  margin-left: 15px;
 }
 
 .scroll-content {
   overflow-x: auto;
   display: flex;
+  margin-right: 15px;
 }
 
-/* 스크롤바의 색상 및 너비 설정 */
 .scroll-content::-webkit-scrollbar {
-  width: 5px;
-  /* 스크롤바 너비 */
-  height: 2px;
+  width: 5;
+  height: 2.5px;
 }
 
 .scroll-content::-webkit-scrollbar-track {
-  background-color: rgb(255, 255, 255, 0);
-  /* 스크롤바 트랙 배경색 */
+  background-color: rgba(255, 255, 255, 0.641);
+  border-radius: 6px;
 }
 
 .scroll-content::-webkit-scrollbar-thumb {
-  background-color: rgb(0, 0, 0, 0);
-  /* 스크롤바 색상 */
+  background-color: rgba(133, 80, 19, 0.678);
   border-radius: 6px;
-  /* 스크롤바 모서리 둥글기 */
 }
 
 .game {
@@ -207,15 +227,117 @@ h2 {
   display: none;
 }
 
+@media (max-width: 1490px) {
+  .featured-game img {
+    width: 300px;
+    height: 200px;
+  }
+
+  .featured {
+    margin-left: 80px;
+    margin-right: 70px;
+  }
+
+  .rank-number {
+    font-size: 160px;
+    position: absolute;
+    top: 50px;
+    transform: translateY(-50%);
+    z-index: 1;
+    left: -60px;
+  }
+
+  .rank-number1 {
+    font-size: 160px;
+    position: absolute;
+    top: 50px;
+    transform: translateY(-50%);
+    z-index: 1;
+    left: -55px;
+  }
+}
+
+@media (max-width: 1382px) {
+  .featured-game img {
+    width: 280px;
+    height: 180px;
+  }
+
+  .featured {
+    margin-left: 75px;
+    margin-right: 65px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1270px) {
+  .featured-game img {
+    width: 270px;
+    height: 170px;
+  }
+
+  .featured {
+    margin-left: 70px;
+    margin-right: 65px;
+  }
+
+  .rank-number {
+    font-size: 140px;
+    position: absolute;
+    top: 50px;
+    transform: translateY(-50%);
+    z-index: 1;
+    left: -53px;
+  }
+
+  .rank-number1 {
+    font-size: 140px;
+    position: absolute;
+    top: 50px;
+    transform: translateY(-50%);
+    z-index: 1;
+    left: -48px;
+  }
+}
+
 @media (max-width: 1024px) {
+  .top-bar {
+    padding: 5px 0;
+    justify-content: center;
+  }
 
   header .logo {
     margin-left: 10px;
     width: 60px;
   }
 
+  header img.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 0;
+  }
+
+  header h1 {
+    font-size: 23px;
+  }
+
+  header .title {
+    display: flex;
+    gap: 4px;
+  }
+
   .search-bar {
     margin-right: 5px;
+    justify-content: flex-end;
+  }
+
+  .search-bar input {
+    max-width: 150px;
+    max-height: 10px;
+  }
+
+  .search-bar ::placeholder {
+    font-size: 13px;
   }
 
   .featured {
@@ -223,7 +345,37 @@ h2 {
   }
 
   .game-wrap {
+    position: relative;
     display: block;
+  }
+
+  .game-wrap img {
+    position: relative;
+    z-index: 1;
+  }
+
+  .play-now {
+    position: absolute;
+    z-index: 2;
+    bottom: 40px;
+    right: 0;
+    width: 160px;
+    margin-right: 30px;
+    display: flex;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+    cursor: pointer;
+    justify-content: flex-end;
+  }
+
+  .play-content {
+    position: relative;
+    top: 3.6px;
+  }
+
+  .play-now i {
+    font-size: 30px;
   }
 
   .featured-game.active {
@@ -254,39 +406,6 @@ h2 {
     height: 100px;
     margin: 5px;
   }
-
-  .top-bar {
-    padding: 5px 0;
-    justify-content: center;
-  }
-
-  header img.logo {
-    width: 50px;
-    height: auto;
-    margin-right: 0;
-  }
-
-  .search-bar {
-    justify-content: flex-end;
-  }
-
-  .search-bar input {
-    max-width: 150px;
-    max-height: 10px;
-  }
-
-  .search-bar ::placeholder {
-    font-size: 13px;
-  }
-
-  header h1 {
-    font-size: 23px;
-  }
-
-  header .title {
-    display: flex;
-    gap: 4px;
-  }
 }
 
 .slideshow-container {
@@ -306,8 +425,8 @@ h2 {
 }
 
 .mySlides img {
-  height: 350px;
-
+  height: 500px;
+  cursor: pointer;
 }
 
 .dot {
@@ -319,7 +438,7 @@ h2 {
   display: inline-block;
   transition: background-color 0.6s ease;
   position: relative;
-  bottom: 50px;
+  bottom: 45px;
   z-index: 3;
 }
 
@@ -344,7 +463,7 @@ h2 {
 
 @media (max-width: 950px) {
   .mySlides img {
-    height: 330px;
+    height: 400px;
   }
 
   .game img {
@@ -353,29 +472,32 @@ h2 {
   }
 }
 
-@media (max-width: 900px) {
-  .mySlides img {
-    height: 310px;
-  }
-}
-
-@media (max-width: 850px) {
-  .mySlides img {
-    height: 290px;
-  }
-
-}
-
 @media (max-width: 800px) {
   .mySlides img {
-    height: 270px;
+    height: 350px;
   }
-
 }
 
 @media (max-width: 700px) {
   .mySlides img {
-    height: 250px;
+    height: 300px;
+  }
+
+  .play-now {
+    position: absolute;
+    bottom: 30px;
+    width: 160px;
+    margin-right: 25px;
+    font-size: 22px;
+  }
+
+  .play-content {
+    position: relative;
+    top: 3.6px;
+  }
+
+  .play-now i {
+    font-size: 28px;
   }
 
   .dot {
@@ -447,6 +569,11 @@ h2 {
     padding-left: 5px;
   }
 
+  .play-content {
+    position: relative;
+    top: 5px;
+  }
+
   .dot {
     height: 6px;
     width: 6px;
@@ -458,5 +585,120 @@ h2 {
     font-weight: 1000;
     -webkit-text-stroke: 1.2px rgb(86, 86, 86);
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 550px) {
+  .mySlides img {
+    height: 250px;
+  }
+
+  .play-now {
+    position: absolute;
+    bottom: 25px;
+    width: 160px;
+    margin-right: 20px;
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    justify-content: flex-end;
+  }
+
+  .play-content {
+    position: relative;
+    top: 4.5px;
+  }
+
+  .play-now i {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mySlides img {
+    height: 230px;
+  }
+
+  h2 {
+    font-size: 22px;
+    font-weight: 1000;
+    -webkit-text-stroke: 1.1px rgb(86, 86, 86);
+  }
+
+  .game img {
+    width: 120px;
+    height: 90px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .play-now {
+    margin-right: 15px;
+    bottom: 20px;
+    right: 0;
+    width: 130px;
+    font-size: 17px;
+  }
+
+  .play-content {
+    position: relative;
+    top: 3.5px;
+  }
+
+  .play-now i {
+    font-size: 21px;
+    position: relative;
+    top: 0.6px;
+  }
+
+  h2 {
+    font-size: 23px;
+    font-weight: 1000;
+    -webkit-text-stroke: 1.2px rgb(86, 86, 86);
+  }
+
+  .game img {
+    width: 117px;
+    height: 87px;
+    margin: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mySlides img {
+    height: 190px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 1000;
+    -webkit-text-stroke: 1px rgb(86, 86, 86);
+  }
+
+  .play-now {
+    bottom: 20px;
+    right: 0;
+    width: 130px;
+    font-size: 15px;
+  }
+
+  .play-content {
+    position: relative;
+    top: 3.7px;
+  }
+
+  .play-now i {
+    font-size: 19px;
+    position: relative;
+    top: 1.7px;
+  }
+
+  .game img {
+    width: 97px;
+    height: 67px;
+    margin: 5px;
   }
 }

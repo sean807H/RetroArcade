@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Arcade</title>
+    <link rel="stylesheet" href="/RetroArcade-1/main1/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="shortcut icon" src="mainlogo.png">
+</head>
+
+<body>
+    <div class="container">
+        <header class="top-bar">
+            <img src="/RetroArcade-1/main1/logo.png" alt="Logo" class="logo" />
+            <div class="title">
+                <h1 class="retro">Retro</h1>
+                <h1 class="arcade">Arcade</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search..." />
+                <button id="search-button">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+        </header>
+        <section class="featured">
+            <div class="featured-game" onclick="navigateToGame('/RetroArcade-2/main1/main-2')" data-title="tekken 철권">
+                <div class="ranked-wrapper">
+                    <div class="rank-number1">1</div>
+                    <img src="/RetroArcade-1/main1/철권.jpg" alt="Game 1" class="rank"/>
+                </div>
+            </div>
+            <div class="featured-game" onclick="navigateToGame('/RetroArcade-2/main2/main-2-1')" data-title="subwaysurfers 서브웨이서퍼">
+                <div class="ranked-wrapper">
+                    <div class="rank-number">2</div>
+                    <img src="/RetroArcade-1/main1/서브웨이서퍼.png" alt="Game 2" class="rank"/>
+                </div>
+            </div>
+            <div class="featured-game" onclick="navigateToGame('/RetroArcade-2/main3/main-2-2')" data-title="fireboyandwatergirl 버블슈터">
+                <div class="ranked-wrapper">
+                    <div class="rank-number">3</div>
+                    <img src="/RetroArcade-1/main1/new7.jpg" alt="Game 3" class="rank"/>
+                </div>
+            </div>
+        </section>
+
+        <div class="game-wrap">
+            <div class="slideshow-container">
+                <div class="mySlides fade" onclick="navigateToGame('/RetroArcade-2/main1/main-2')">
+                    <img src="/RetroArcade-1/main1/철권.jpg" style="width: 100%" />
+                    <div class="play-now">
+                        <div onclick="navigateToGameLink('https://store.steampowered.com')" class="play-content">Play Now</div>
+                        <i class="bi bi-caret-right-fill"></i>
+                    </div>
+                </div>
+                <div class="mySlides fade" onclick="navigateToGame('/RetroArcade-2/main2/main-2-1')">
+                    <img src="/RetroArcade-1/main1/서브웨이서퍼.png" style="width: 100%" />
+                    <div class="play-now">
+                        <div onclick="navigateToGameLink('https://poki.com/kr/g/subway-surfers#utm_source=redirect-en-ko')" class="play-content">Play Now</div>
+                        <i class="bi bi-caret-right-fill"></i>
+                    </div>
+                </div>
+                <div class="mySlides fade" onclick="navigateToGame('/RetroArcade-2/main3/main-2-2')">
+                    <img src="/RetroArcade-1/main1/new7.jpg" style="width: 100%" />
+                    <div class="play-now">
+                        <div onclick="navigateToGameLink('https://fireboyandwatergirl.site/forest-temple')" class="play-content">Play Now</div>
+                        <i class="bi bi-caret-right-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div style="text-align: center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <section class="recommendation">
+            <h2>Recommendation</h2>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <div class="game" onclick="navigateToGameLink('https://tetris.com')" data-title="tetris 테트리스">
+                        <img src="/RetroArcade-1/main1/Recommendation1.jpg" alt="Game 4" />
+                    </div>
+                    <div class="game" onclick="navigateToGame('/RetroArcade-2/main1/main-2')" data-title="tekken 철권">
+                        <img src="/RetroArcade-1/main1/Recommendation2.jpg" alt="Game 5" />
+                    </div>
+                    <div class="game" onclick="navigateToGame('/RetroArcade-2/main2/main-2-1')" data-title="subwaysurfers 서브웨이서퍼">
+                        <img src="/RetroArcade-1/main1/Recommendation3.jpg" alt="Game 6" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/growmi#utm_source=redirect-en-ko')" data-title="growmi 그로우미">
+                        <img src="/RetroArcade-1/main1/Recommendation4.jpg" alt="Game 7" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/fruit-ninja')" data-title="fruitninja 과일닌자">
+                        <img src="/RetroArcade-1/main1/Recommendation5.jpg" alt="Game 8" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/slime-laboratory')"
+                        data-title="slimelaboratory 슬라임 실험실">
+                        <img src="/RetroArcade-1/main1/Recommendation6.jpg" alt="Game 9" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/bubble-shooter-lak')" data-title="bubbleshooter 버블슈터">
+                        <img src="/RetroArcade-1/main1/Recommendation7.jpg" alt="Game 10" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/war-master')" data-title="warmaster 워마스터 월마스터">
+                        <img src="/RetroArcade-1/main1/Recommendation8.png" alt="Game 10" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/parakite-ninja')" data-title="parakiteninja 페러카이트닌자">
+                        <img src="/RetroArcade-1/main1/Recommendation9.png" alt="Game 10" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/hills-of-steel')" data-title="hillsofsteel 힐오브스틸 힐스오브스틸">
+                        <img src="/RetroArcade-1/main1/Recommendation10.jpg" alt="Game 10" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/watermelon-drop')" data-title="watermelondrop 수박게임 위터멜론드롭">
+                        <img src="/RetroArcade-1/main1/Recommendation11.jpg" alt="Game 10" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new">
+            <h2>New</h2>
+            <div class="scroll-container">
+                <div class="scroll-content">
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/monster-tracks')" data-title="monstertracks 몬스터 트랙">
+                        <img src="/RetroArcade-1/main1/new.jpg" alt="Game 11" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/numbskull')" data-title="numbskull 넘스컬">
+                        <img src="/RetroArcade-1/main1/new2.jpg" alt="Game 12" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/tube-jumpers')" data-title="tubejumpers 튜브점퍼">
+                        <img src="/RetroArcade-1/main1/new3.jpg" alt="Game 13" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/ragdoll-fall')" data-title="ragdollfall 래그돌펄">
+                        <img src="/RetroArcade-1/main1/new4.jpg" alt="Game 14" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/roper')" data-title="roper 로퍼">
+                        <img src="/RetroArcade-1/main1/new5.jpg" alt="Game 15" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/sparkanoid')" data-title="sparkaniod 스파크어노이드">
+                        <img src="/RetroArcade-1/main1/new6.jpg" alt="Game 16" />
+                    </div>
+                    <div class="game" onclick="navigateToGame('/RetroArcade-2/main3/main-2-2')"
+                        data-title="fireboyandwatergirl 파이어보이앤워터걸">
+                        <img src="/RetroArcade-1/main1/new7.jpg" alt="Game 17" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/mine-sweeper-3')" data-title="minesweeper 마인스위퍼">
+                        <img src="/RetroArcade-1/main1/new8.jpg" alt="Game 17" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/casual-cube')" data-title="casualcube 캐쥬얼큐브">
+                        <img src="/RetroArcade-1/main1/new9.jpg" alt="Game 17" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/level-devil')" data-title="leveldevil 레벨데빌">
+                        <img src="/RetroArcade-1/main1/new10.jpg" alt="Game 17" />
+                    </div>
+                    <div class="game" onclick="navigateToGameLink('https://poki.com/kr/g/temple-run-2')" data-title="templerun 템플런">
+                        <img src="/RetroArcade-1/main1/new11.jpg" alt="Game 17" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        function navigateToGame(gameId) {
+            window.location.href = gameId + '.html';
+        }
+
+        function navigateToGameLink(url) {
+            window.open(url, 'https:');
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("search-input");
+            const games = document.querySelectorAll(".game");
+
+            function filterGames() {
+                const searchTerm = searchInput.value.trim().toLowerCase();
+
+                games.forEach((game) => {
+                    const title = game.getAttribute("data-title").toLowerCase();
+                    const gameElement = game.querySelector("img");
+
+                    if (title.includes(searchTerm)) {
+                        game.style.display = "inline-block";
+                    } else {
+                        game.style.display = "none";
+                    }
+                });
+            }
+
+            document
+                .getElementById("search-button")
+                .addEventListener("click", filterGames);
+            searchInput.addEventListener("input", filterGames);
+        });
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>

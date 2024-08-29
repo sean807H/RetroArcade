@@ -19,7 +19,7 @@ h1 {
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -76,6 +76,7 @@ header .title {
     border-radius: 20px;
     border: 2px solid rgb(0, 0, 0);
     background-color: #ececec00;
+    outline: none;
 }
 
 .search-bar ::placeholder {
@@ -103,6 +104,8 @@ i {
 .game-detailst {
     text-align: center;
     margin-top: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 h2 {
