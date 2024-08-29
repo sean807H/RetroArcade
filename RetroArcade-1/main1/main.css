@@ -7,6 +7,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-color: #f5f5dc;
+  width: max;
 }
 
 h1 {
@@ -373,9 +374,13 @@ h2 {
     position: relative;
     top: 3.6px;
   }
+}
 
-  .play-now i {
-    font-size: 30px;
+.play-now i {
+  font-size: 30px;
+
+  .slideshow-container {
+    cursor: pointer;
   }
 
   .featured-game.active {
@@ -700,5 +705,11 @@ h2 {
     width: 97px;
     height: 67px;
     margin: 5px;
+
+    @media (max-width: 400px) {
+      .mySlides img {
+        height: 180px;
+      }
+    }
   }
 }
